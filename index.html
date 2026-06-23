@@ -1,10 +1,155 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
+<html lang="fr" dir="ltr" prefix="dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ schema: https://schema.org/">
+<head about="./" typeof="foaf:Document">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title property="dc:title">Portfolio XML et Web sémantique - Merlina ARUL</title>
+  <meta name="description" property="dc:description" content="Portfolio multilingue de Merlina ARUL, étudiante ingénieure en informatique, avec annotations RDFa DC et FOAF." />
+  <meta property="dc:creator" content="Merlina ARUL" />
+  <meta property="dc:language" content="fr" />
+  <meta property="dc:created" content="2026-06-19" />
+  <meta property="dc:modified" content="2026-06-23" />
+  <link rel="alternate" hreflang="fr" href="index.html" />
+  <link rel="alternate" hreflang="en" href="en.html" />
+  <link rel="alternate" hreflang="ta" href="ta.html" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-  <p>Portfolio de Merlina ARUL</p>
+<body about="./" typeof="foaf:Document">
+  <nav class="language-switcher" aria-label="Choix de langue">
+    <a class="active" href="index.html">FR</a>
+    <a href="en.html">EN</a>
+    <a href="ta.html">தமிழ்</a>
+  </nav>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a class="logo" href="#top" property="dc:title">Merlina ARUL</a>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#experience">Parcours</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero creative-hero" typeof="foaf:Person" about="#merlina-arul">
+      <div class="hero-text">
+        <p class="badge">Portfolio XML / RDFa</p>
+        <h1 property="foaf:name">Merlina ARUL</h1>
+        <p class="role" property="schema:jobTitle">Étudiante ingénieure en informatique</p>
+        <p class="intro" property="schema:description">J'apprends à construire des applications utiles, à manipuler des données proprement et à rendre l'information plus lisible, aussi bien pour les humains que pour les machines.</p>
+        <div class="hero-keywords" aria-label="Domaines principaux">
+          <span>DATA</span>
+          <span>SOFTWARE</span>
+          <span>XML/RDFa</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Voir mes projets</a>
+          <a class="button secondary" href="docs/CV_Merlina_ARUL.pdf" property="foaf:page">Télécharger mon CV</a>
+        </div>
+      </div>
+      <aside class="profile-card hero-panel">
+        <p class="panel-label">Actuellement</p>
+        <p class="panel-big">Apprentie Data Engineer</p>
+        <p><strong>Lieu</strong> <span property="schema:addressLocality">Paris</span></p>
+        <p><strong>Email</strong> <a href="mailto:merlinaarul26@gmail.com" property="foaf:mbox">merlinaarul26@gmail.com</a></p>
+        <p><strong>GitHub</strong> <a href="https://github.com/merlinaarul" rel="foaf:account">github.com/merlinaarul</a></p>
+        <p><strong>LinkedIn</strong> <a href="https://linkedin.com/in/merlinaarul" rel="foaf:account">linkedin.com/in/merlinaarul</a></p>
+      </aside>
+    </section>
+
+    <section id="about" class="section">
+      <p class="section-kicker">Profil</p>
+      <h2>À propos</h2>
+      <p>Je suis étudiante en cycle ingénieur informatique à Sup Galilée et apprentie Data Engineer chez BNP Paribas. Mon parcours m’a permis de développer des compétences en programmation, en bases de données, en systèmes et en développement logiciel. J’aime travailler sur des projets concrets qui relient la technique à des besoins réels, notamment autour de la donnée, de l’automatisation et de la structuration de l’information. Curieuse et motivée, je cherche à progresser en construisant des solutions utiles, claires et bien organisées.</p>
+    </section>
+
+    <div class="rdfa-hidden" rel="dc:creator" resource="#merlina-arul" aria-hidden="true"></div>
+
+    <section id="skills" class="section">
+      <p class="section-kicker">Stack principale</p>
+      <h2>Compétences</h2>
+      <div class="cards">
+        <article class="card"><p>Développement : Python, Java, C, SQL, MATLAB, HTML/CSS.</p></article>
+        <article class="card"><p>Outils : Git, Docker, Flyway, Airflow, Linux et Wireshark.</p></article>
+        <article class="card"><p>Données : requêtes SQL, modélisation relationnelle et conception de bases.</p></article>
+        <article class="card"><p>Web sémantique : XML, XPath, DTD, RDFa, Dublin Core et FOAF.</p></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <p class="section-kicker">Sélection de travaux</p>
+      <h2>Projets</h2>
+      <div class="cards projects-grid">
+        <article class="card" typeof="schema:CreativeWork">
+          <span class="project-number">01</span>
+          <h3 property="schema:name">Mini Jira API</h3>
+          <p property="schema:description">Une API REST en Java/Spring Boot pour gérer des tickets, des projets et des utilisateurs, avec une séparation claire entre Controller, Service et Repository.</p>
+        </article>
+        <article class="card" typeof="schema:CreativeWork">
+          <span class="project-number">02</span>
+          <h3 property="schema:name">Ferme autosoutenable</h3>
+          <p property="schema:description">Une simulation Java centrée sur les saisons, les ressources, les animaux, les plantes et les interactions entre les entités.</p>
+        </article>
+        <article class="card" typeof="schema:CreativeWork">
+          <span class="project-number">03</span>
+          <h3 property="schema:name">Codage de Huffman</h3>
+          <p property="schema:description">Un projet en C autour de la compression : arbre binaire, encodage, décodage, fichiers binaires et gestion mémoire.</p>
+        </article>
+        <article class="card" typeof="schema:CreativeWork">
+          <span class="project-number">04</span>
+          <h3 property="schema:name">Mastermind GTK</h3>
+          <p property="schema:description">Une interface graphique en C/GTK ajoutée à un jeu existant, avec un contrôleur pour relier l'affichage et la logique.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section two-columns">
+      <div>
+        <p class="section-kicker">Parcours</p>
+        <h2>Expériences</h2>
+        <article class="timeline-item">
+          <h3>Data Engineer apprentie - BNP Paribas</h3>
+          <p>Participation à des traitements de purge de données, écriture de requêtes SQL, configuration de batchs et premiers workflows de monitoring avec Python et Airflow.</p>
+        </article>
+        <article class="timeline-item">
+          <h3>Cycle ingénieur informatique - Sup Galilée</h3>
+          <p>Formation en programmation, bases de données, systèmes, réseaux, algorithmique, génie logiciel et web sémantique.</p>
+        </article>
+      </div>
+      <aside class="video-box media-panel">
+        <div>
+          <h3>Présentation vidéo</h3>
+          <p></p>
+          <iframe title="Présentation vidéo"
+          src="https://www.youtube.com/embed/ngdmBnVNeps?si=mpyzR8RYQHzEaz6s&cc_load_policy=1&cc_lang_pref=fr" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="language-note">
+          <h3>Langues et qualités</h3>
+          <p>Français : langue maternelle</p>
+          <p>Anglais : niveau avancé</p>
+          <p>Tamoul : langue maternelle</p>
+          <p>Esprit d'équipe, autonomie, adaptabilité et prise d'initiative.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="contact" class="section contact" typeof="foaf:Person" about="#merlina-arul">
+      <p class="section-kicker">Contact</p>
+      <h2>Me contacter</h2>
+      <p>Je suis disponible par e-mail et mes profils GitHub et LinkedIn permettent de retrouver mes projets et mon parcours.</p>
+      <p><a href="mailto:merlinaarul26@gmail.com" property="foaf:mbox">merlinaarul26@gmail.com</a></p>
+      <p><a href="https://github.com/merlinaarul" rel="foaf:account">GitHub</a> · <a href="https://linkedin.com/in/merlinaarul" rel="foaf:account">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Portfolio réalisé dans le cadre du cours de Web sémantique.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

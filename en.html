@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ schema: https://schema.org/">
+<head about="./" typeof="foaf:Document">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title property="dc:title">XML and Semantic Web Portfolio - Merlina ARUL</title>
+  <meta name="description" property="dc:description" content="A multilingual portfolio presenting Merlina ARUL's computing background, projects, XML structure and RDFa annotations." />
+  <meta property="dc:creator" content="Merlina ARUL" />
+  <meta property="dc:language" content="en" />
+  <meta property="dc:created" content="2026-06-19" />
+  <meta property="dc:modified" content="2026-06-23" />
+  <link rel="alternate" hreflang="fr" href="index.html" />
+  <link rel="alternate" hreflang="en" href="en.html" />
+  <link rel="alternate" hreflang="ta" href="ta.html" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body about="./" typeof="foaf:Document">
+  <nav class="language-switcher" aria-label="Language selection">
+    <a href="index.html">FR</a>
+    <a class="active" href="en.html">EN</a>
+    <a href="ta.html">தமிழ்</a>
+  </nav>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="#top" property="dc:title">Merlina ARUL</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Background</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero creative-hero" typeof="foaf:Person" about="#merlina-arul">
+      <div class="hero-text">
+        <p class="badge">XML / RDFa Portfolio</p>
+        <h1 property="foaf:name">Merlina ARUL</h1>
+        <p class="role" property="schema:jobTitle">Computer Science Engineering Student</p>
+        <p class="intro" property="schema:description">I build technical projects that connect software, data and structured information, with a growing interest in making content understandable for both people and machines.</p>
+        <div class="hero-keywords" aria-label="Main fields">
+          <span>DATA</span>
+          <span>SOFTWARE</span>
+          <span>XML/RDFa</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore projects</a>
+          <a class="button secondary" href="docs/CV_Merlina_ARUL.pdf" property="foaf:page">Download CV</a>
+        </div>
+      </div>
+      <aside class="profile-card hero-panel">
+        <p class="panel-label">Currently</p>
+        <p class="panel-big">Data Engineer apprentice</p>
+        <p><strong>Based in</strong> <span property="schema:addressLocality">Paris</span></p>
+        <p><strong>Email</strong> <a href="mailto:merlinaarul26@gmail.com" property="foaf:mbox">merlinaarul26@gmail.com</a></p>
+        <p><strong>GitHub</strong> <a href="https://github.com/merlinaarul" rel="foaf:account">github.com/merlinaarul</a></p>
+        <p><strong>LinkedIn</strong> <a href="https://linkedin.com/in/merlinaarul" rel="foaf:account">linkedin.com/in/merlinaarul</a></p>
+      </aside>
+    </section>
+
+    <section id="about" class="section">
+      <p class="section-kicker">Profile</p>
+      <h2>About</h2>
+      <p>I am a computer science engineering student at Sup Galilee and a Data Engineer apprentice at BNP Paribas. My academic and professional experience has helped me build skills in programming, databases, systems and software development. I enjoy working on concrete projects that connect technical solutions with real needs, especially around data, automation and structured information. Curious and motivated, I aim to keep improving by building useful, clear and well-organized solutions.</p>
+    </section>
+
+    <div class="rdfa-hidden" rel="dc:creator" resource="#merlina-arul" aria-hidden="true"></div>
+
+    <section id="skills" class="section">
+      <p class="section-kicker">Main stack</p>
+      <h2>Skills</h2>
+      <div class="cards">
+        <article class="card"><p>Programming: Python, Java, C, SQL, MATLAB and HTML/CSS.</p></article>
+        <article class="card"><p>Tools: Git, Docker, Flyway, Airflow, Linux and Wireshark.</p></article>
+        <article class="card"><p>Data: SQL queries, relational modelling and database design.</p></article>
+        <article class="card"><p>Semantic Web: XML, XPath, DTD, RDFa, Dublin Core and FOAF.</p></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <p class="section-kicker">Selected work</p>
+      <h2>Projects</h2>
+      <div class="cards projects-grid">
+        <article class="card" typeof="schema:CreativeWork">
+          <span class="project-number">01</span>
+          <h3 property="schema:name">Mini Jira API</h3>
+          <p property="schema:description">A Java/Spring Boot REST API for managing tickets, projects and users, built with a clear Controller, Service and Repository structure.</p>
+        </article>
+        <article class="card" typeof="schema:CreativeWork">
+          <span class="project-number">02</span>
+          <h3 property="schema:name">Self-sustaining farm</h3>
+          <p property="schema:description">A Java simulation focused on seasons, resources, animals, plants and interactions between entities.</p>
+        </article>
+        <article class="card" typeof="schema:CreativeWork">
+          <span class="project-number">03</span>
+          <h3 property="schema:name">Huffman coding</h3>
+          <p property="schema:description">A C project about compression, using binary trees, encoding, decoding, binary files and memory management.</p>
+        </article>
+        <article class="card" typeof="schema:CreativeWork">
+          <span class="project-number">04</span>
+          <h3 property="schema:name">Mastermind GTK</h3>
+          <p property="schema:description">A C/GTK graphical interface added to an existing Mastermind game, with a controller connecting the view and the game logic.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section two-columns">
+      <div>
+        <p class="section-kicker">Background</p>
+        <h2>Experience</h2>
+        <article class="timeline-item">
+          <h3>Data Engineer apprentice - BNP Paribas</h3>
+          <p>I work on data purge processes, SQL queries, batch configuration and early monitoring workflows with Python and Airflow.</p>
+        </article>
+        <article class="timeline-item">
+          <h3>Computer Science Engineering Program - Sup Galilee</h3>
+          <p>My training includes programming, databases, operating systems, networks, algorithms, software engineering and Semantic Web concepts.</p>
+        </article>
+      </div>
+      <aside class="video-box media-panel">
+        <div>
+          <h3>Video presentation</h3>
+          <p></p>
+          <iframe title="Video presentation" 
+            src="https://www.youtube.com/embed/ngdmBnVNeps?si=mpyzR8RYQHzEaz6s&cc_load_policy=1&cc_lang_pref=en" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="language-note">
+          <h3>Languages and qualities</h3>
+          <p>French: native language</p>
+          <p>English: advanced level</p>
+          <p>Tamil: mother tongue</p>
+          <p>Team spirit, autonomy, adaptability and initiative.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="contact" class="section contact" typeof="foaf:Person" about="#merlina-arul">
+      <p class="section-kicker">Contact</p>
+      <h2>Let's connect</h2>
+      <p>You can reach me by email, and my GitHub and LinkedIn profiles show more about my projects and background.</p>
+      <p><a href="mailto:merlinaarul26@gmail.com" property="foaf:mbox">merlinaarul26@gmail.com</a></p>
+      <p><a href="https://github.com/merlinaarul" rel="foaf:account">GitHub</a> · <a href="https://linkedin.com/in/merlinaarul" rel="foaf:account">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Portfolio created for the Semantic Web course.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

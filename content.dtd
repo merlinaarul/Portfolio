@@ -1,0 +1,13 @@
+<!ELEMENT portfolio (languages, blocks)>
+<!ELEMENT languages (language+)>
+<!ELEMENT language EMPTY>
+<!ATTLIST language
+          code CDATA #REQUIRED
+          name CDATA #REQUIRED
+          dir (ltr|rtl) "ltr">
+
+<!ELEMENT blocks (block+)>
+<!ELEMENT block (text+)>
+<!ATTLIST block id ID #REQUIRED>
+<!ELEMENT text (#PCDATA)>
+<!ATTLIST text lang CDATA #REQUIRED>

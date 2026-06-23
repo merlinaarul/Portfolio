@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE portfolio SYSTEM "content.dtd">
+<portfolio>
+  <languages>
+    <language code="fr" name="Français" dir="ltr" />
+    <language code="en" name="English" dir="ltr" />
+    <language code="ta" name="தமிழ்" dir="ltr" />
+  </languages>
+  <blocks>
+    <block id="hero_intro">
+      <text lang="fr">J'apprends à construire des applications utiles, à manipuler des données proprement et à rendre l'information plus lisible, aussi bien pour les humains que pour les machines.</text>
+      <text lang="en">I build technical projects that connect software, data and structured information, with a growing interest in making content understandable for both people and machines.</text>
+      <text lang="ta">நான் மென்பொருள், தரவு மற்றும் கட்டமைக்கப்பட்ட தகவல்களை இணைக்கும் திட்டங்களில் பணிபுரிகிறேன். மனிதர்களுக்கும் இயந்திரங்களுக்கும் புரியும் வகையில் தகவலை அமைப்பதில் எனக்கு ஆர்வம் உள்ளது.</text>
+    </block>
+    <block id="about">
+      <text lang="fr">Je suis étudiante en cycle ingénieur informatique à Sup Galilée et apprentie Data Engineer chez BNP Paribas. Ce portfolio présente mon parcours, mes projets et une mise en pratique simple des notions de XML, DTD, RDFa, Dublin Core et FOAF.</text>
+      <text lang="en">I am studying computer science engineering at Sup Galilee while working as a Data Engineer apprentice at BNP Paribas. This portfolio presents my background and projects, and also shows a simple use of XML, DTD, RDFa, Dublin Core and FOAF.</text>
+      <text lang="ta">நான் Sup Galilée-யில் கணினி அறிவியல் பொறியியல் படிக்கிறேன். அதே நேரத்தில் BNP Paribas-ல் Data Engineer பயிலுநராக பணியாற்றுகிறேன். இந்த போர்ட்ஃபோலியோ என் பயணம், என் திட்டங்கள் மற்றும் XML, DTD, RDFa, Dublin Core, FOAF ஆகிய கருத்துகளின் எளிய பயன்பாட்டைக் காட்டுகிறது.</text>
+    </block>
+    <block id="skills_programming">
+      <text lang="fr">Développement : Python, Java, C, SQL, MATLAB, HTML/CSS.</text>
+      <text lang="en">Programming: Python, Java, C, SQL, MATLAB and HTML/CSS.</text>
+      <text lang="ta">நிரலாக்கம்: Python, Java, C, SQL, MATLAB மற்றும் HTML/CSS.</text>
+    </block>
+    <block id="skills_tools">
+      <text lang="fr">Outils : Git, Docker, Flyway, Airflow, Linux et Wireshark.</text>
+      <text lang="en">Tools: Git, Docker, Flyway, Airflow, Linux and Wireshark.</text>
+      <text lang="ta">கருவிகள்: Git, Docker, Flyway, Airflow, Linux மற்றும் Wireshark.</text>
+    </block>
+    <block id="skills_data">
+      <text lang="fr">Données : requêtes SQL, modélisation relationnelle et conception de bases.</text>
+      <text lang="en">Data: SQL queries, relational modelling and database design.</text>
+      <text lang="ta">தரவு: SQL queries, relational modelling மற்றும் database design.</text>
+    </block>
+    <block id="skills_semantic">
+      <text lang="fr">Web sémantique : XML, XPath, DTD, RDFa, Dublin Core et FOAF.</text>
+      <text lang="en">Semantic Web: XML, XPath, DTD, RDFa, Dublin Core and FOAF.</text>
+      <text lang="ta">Semantic Web: XML, XPath, DTD, RDFa, Dublin Core மற்றும் FOAF.</text>
+    </block>
+    <block id="project_jira">
+      <text lang="fr">Une API REST en Java/Spring Boot pour gérer des tickets, des projets et des utilisateurs, avec une séparation claire entre Controller, Service et Repository.</text>
+      <text lang="en">A Java/Spring Boot REST API for managing tickets, projects and users, built with a clear Controller, Service and Repository structure.</text>
+      <text lang="ta">Java/Spring Boot மூலம் உருவாக்கப்பட்ட REST API. இது tickets, projects மற்றும் users-ஐ Controller, Service, Repository அமைப்புடன் நிர்வகிக்கிறது.</text>
+    </block>
+    <block id="project_farm">
+      <text lang="fr">Une simulation Java centrée sur les saisons, les ressources, les animaux, les plantes et les interactions entre les entités.</text>
+      <text lang="en">A Java simulation focused on seasons, resources, animals, plants and interactions between entities.</text>
+      <text lang="ta">Java simulation. இதில் பருவங்கள், வளங்கள், விலங்குகள், தாவரங்கள் மற்றும் entity interactions கவனிக்கப்படுகின்றன.</text>
+    </block>
+    <block id="project_huffman">
+      <text lang="fr">Un projet en C autour de la compression : arbre binaire, encodage, décodage, fichiers binaires et gestion mémoire.</text>
+      <text lang="en">A C project about compression, using binary trees, encoding, decoding, binary files and memory management.</text>
+      <text lang="ta">C மொழியில் compression project. Binary tree, encoding, decoding, binary files மற்றும் memory management பயன்படுத்தப்படுகின்றன.</text>
+    </block>
+    <block id="project_mastermind">
+      <text lang="fr">Une interface graphique en C/GTK ajoutée à un jeu existant, avec un contrôleur pour relier l'affichage et la logique.</text>
+      <text lang="en">A C/GTK graphical interface added to an existing Mastermind game, with a controller connecting the view and the game logic.</text>
+      <text lang="ta">ஏற்கனவே இருந்த Mastermind விளையாட்டுக்கு C/GTK மூலம் graphical interface சேர்க்கப்பட்டது. View மற்றும் game logic-ஐ controller இணைக்கிறது.</text>
+    </block>
+    <block id="experience_bnp">
+      <text lang="fr">Participation à des traitements de purge de données, écriture de requêtes SQL, configuration de batchs et premiers workflows de monitoring avec Python et Airflow.</text>
+      <text lang="en">I work on data purge processes, SQL queries, batch configuration and early monitoring workflows with Python and Airflow.</text>
+      <text lang="ta">Data purge processes, SQL queries, batch configuration மற்றும் Python/Airflow monitoring workflows மீது பணிபுரிகிறேன்.</text>
+    </block>
+    <block id="experience_school">
+      <text lang="fr">Formation en programmation, bases de données, systèmes, réseaux, algorithmique, génie logiciel et web sémantique.</text>
+      <text lang="en">My training includes programming, databases, operating systems, networks, algorithms, software engineering and Semantic Web concepts.</text>
+      <text lang="ta">நிரலாக்கம், தரவுத்தளங்கள், systems, networks, algorithms, software engineering மற்றும் Semantic Web ஆகியவற்றை கற்றுக்கொள்கிறேன்.</text>
+    </block>
+  </blocks>
+</portfolio>
